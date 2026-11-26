@@ -922,6 +922,7 @@ h3 {
 
 .leader-image-wrap img {
   width: 100%;
+  height: auto;
   aspect-ratio: 0.78;
   object-fit: cover;
   object-position: 50% 30%;

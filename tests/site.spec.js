@@ -80,3 +80,15 @@ test("mobile navigation opens and closes after a link is selected", async ({ pag
   await expect(toggle).toHaveAttribute("aria-expanded", "false");
   await expect(page).toHaveURL(/#story$/);
 });
+
+test("the ministry photo retains its intended proportions on mobile and desktop", async ({ page }) => {
+  await page.goto("/");
+
+  const photo = page.locator(".leader-image-wrap img");
+  for (const width of [320, 390, 680, 1024, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    const box = await photo.boundingBox();
+    expect(box).not.toBeNull();
+    expect(box.width / box.height).toBeCloseTo(0.78, 2);
+  }
+});
