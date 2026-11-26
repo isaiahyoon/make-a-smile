@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fbfaf6">
+    <meta
+      name="description"
+      content="A Christian outreach in downtown Atlanta, showing up with practical care, prayer, counseling, and community."
+      data-meta-description
+    >
+    <title>Make a Smile ATL — Hope grows when we show up</title>
+    <link rel="icon" href="assets/smile-mark.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gelasio:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <div class="announcement">
+      <p data-i18n="announcement">Downtown Atlanta outreach · Sundays + Mondays</p>
+      <a href="https://www.makesmileatlanta.org/volunteer" target="_blank" rel="noreferrer">
+        <span data-i18n="announcement-link">Come serve with us</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M4 10h11m-4-4 4 4-4 4" />
+        </svg>
+      </a>
+    </div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Make a Smile ATL home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="22.5" />
+              <path d="M15.5 27.5c2.2 4.3 5.1 6.4 8.6 6.4s6.3-2.1 8.4-6.4" />
+              <circle class="brand-eye" cx="17.5" cy="18.2" r="1.5" />
+              <circle class="brand-eye" cx="30.5" cy="18.2" r="1.5" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Make a Smile</span>
+            <span class="brand-location">Atlanta, Georgia</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation"
+          data-i18n-aria="menuOpen"
+        >
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation" data-i18n-aria="navLabel">
+          <a href="#work" data-i18n="nav-work">Our work</a>
+          <a href="#story" data-i18n="nav-story">Our story</a>
+          <a href="#gallery" data-i18n="nav-gallery">Gallery</a>
+          <a href="#involved" data-i18n="nav-involved">Get involved</a>
+        </nav>
+
+        <div class="language-control">
+          <button
+            class="language-toggle"
+            id="language-toggle"
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label="Choose language"
+            data-i18n-aria="languageLabel"
+          >
+            <span class="language-code" id="language-code">EN</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="m5 7.5 5 5 5-5" />
+            </svg>
+          </button>
+          <div class="language-menu" id="language-menu" role="menu" hidden>
+            <button type="button" role="menuitemradio" aria-checked="true" data-language="en">English</button>
+            <button type="button" role="menuitemradio" aria-checked="false" data-language="es">Español</button>
+            <button type="button" role="menuitemradio" aria-checked="false" data-language="ko">한국어</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span data-i18n="hero-eyebrow">A neighbor-to-neighbor ministry</span>
+          </p>
+          <h1>
+            <span data-i18n="hero-title">Hope grows when we</span>
+            <em data-i18n="hero-emphasis">show up.</em>
+          </h1>
+          <p class="hero-description" data-i18n="hero-description">
+            A Christian outreach walking alongside Atlanta neighbors experiencing homelessness—with practical care, prayer, counseling, and a community that keeps coming back.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">
+              <span data-i18n="hero-primary">See what care looks like</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-4-4 4 4-4 4" />
+              </svg>
+            </a>
+            <a class="text-link" href="https://www.makesmileatlanta.org/volunteer" target="_blank" rel="noreferrer">
+              <span data-i18n="hero-secondary">Join a Sunday or Monday</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-4-4 4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+          <div class="hero-note">
+            <span class="hero-note-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 2v28M2 16h28M6.1 6.1l19.8 19.8m0-19.8L6.1 25.9" />
+                <circle cx="16" cy="16" r="5.3" />
+              </svg>
+            </span>
+            <span data-i18n="hero-note">Care is more than a moment. It’s a relationship.</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img
+              class="hero-image"
+              src="assets/gallery/neighbors-embrace.webp"
+              alt="Two neighbors sharing a warm embrace outdoors."
+              data-i18n-alt="hero-image-alt"
+              width="768"
+              height="1364"
+              fetchpriority="high"
+            >
+            <div class="hero-image-caption">
+              <span class="caption-line"></span>
+              <span data-i18n="hero-image-caption">A welcome that says: you matter.</span>
+            </div>
+          </div>
+          <div class="hero-sticker">
+            <span class="sticker-top" data-i18n="sticker-top">ATLANTA</span>
+            <span class="sticker-main" data-i18n="sticker-main">Here, together.</span>
+            <span class="sticker-bottom" data-i18n="sticker-bottom">Every week</span>
+          </div>
+          <span class="hero-orbit hero-orbit-one" aria-hidden="true"></span>
+          <span class="hero-orbit hero-orbit-two" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="rhythm-band" aria-label="Our weekly outreach" data-i18n-aria="weeklyOutreach">
+        <div class="rhythm-inner">
+          <div class="rhythm-item">
+            <span class="rhythm-index">01</span>
+            <span class="rhythm-label" data-i18n="rhythm-place-label">WHERE</span>
+            <strong data-i18n="rhythm-place">Downtown Atlanta</strong>
+          </div>
+          <span class="rhythm-divider" aria-hidden="true"></span>
+          <div class="rhythm-item">
+            <span class="rhythm-index">02</span>
+            <span class="rhythm-label" data-i18n="rhythm-days-label">WHEN</span>
+            <strong data-i18n="rhythm-days">Sundays + Mondays</strong>
+          </div>
+          <span class="rhythm-divider" aria-hidden="true"></span>
+          <div class="rhythm-item">
+            <span class="rhythm-index">03</span>
+            <span class="rhythm-label" data-i18n="rhythm-heart-label">HOW</span>
+            <strong data-i18n="rhythm-heart">With dignity and faith</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-section section-shell" id="story">
+        <div class="mission-copy">
+          <p class="eyebrow" data-i18n="mission-eyebrow">Why we show up</p>
+          <h2 data-i18n="mission-title">A person is never a problem to solve.</h2>
+          <p class="section-lede" data-i18n="mission-lede">
+            Make a Smile is a Christian mission serving Atlanta’s unhoused community. We believe lasting change begins with being seen, welcomed, and treated with dignity.
+          </p>
+          <p class="mission-detail" data-i18n="mission-detail">
+            Through rehabilitation and referral support, prayer, and faithful relationships, we walk with people as they pursue greater stability in body, mind, and spirit.
+          </p>
+        </div>
+        <aside class="mission-card">
+          <div class="mission-card-top">
+            <span class="mission-card-symbol" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 4v40M4 24h40M10 10l28 28m0-28L10 38" />
+                <circle cx="24" cy="24" r="8" />
+              </svg>
+            </span>
+            <span class="eyebrow" data-i18n="mission-card-eyebrow">Our north star</span>
+          </div>
+          <blockquote data-i18n="mission-quote">“Hope takes root when we keep showing up—with open hands and open hearts.”</blockquote>
+          <span class="mission-card-rule"></span>
+          <p data-i18n="mission-card-caption">Faith made tangible, one relationship at a time.</p>
+        </aside>
+      </section>
+
+      <section class="work-section section-shell" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="work-eyebrow">Care in practice</p>
+            <h2 data-i18n="work-title">The work is human-sized.</h2>
+          </div>
+          <p class="section-heading-note" data-i18n="work-intro">
+            A meal. A listening ear. A next step made less lonely. Real care starts close.
+          </p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card program-card-lavender">
+            <div class="program-card-head">
+              <span class="program-number">01</span>
+              <span class="program-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M8 20h32M12 20l2.5 19h19L36 20M18 20l6-12 6 12" />
+                  <path d="M17 28h14M20 33h8" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="program-one-title">Practical care</h3>
+            <p data-i18n="program-one-body">
+              We bring food and essential supplies to downtown Atlanta, sharing what’s needed with warmth and respect.
+            </p>
+            <span class="program-card-accent"></span>
+          </article>
+
+          <article class="program-card program-card-green">
+            <div class="program-card-head">
+              <span class="program-number">02</span>
+              <span class="program-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M24 40S7 30 7 18.5C7 12.7 11 9 16.3 9c3.4 0 6 1.8 7.7 4.5C25.7 10.8 28.3 9 31.7 9 37 9 41 12.7 41 18.5 41 30 24 40 24 40Z" />
+                  <path d="M14 24h6l3-6 4 12 3-6h5" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="program-two-title">Faithful presence</h3>
+            <p data-i18n="program-two-body">
+              Weekly worship, prayer, and one-to-one conversation make space for connection, encouragement, and spiritual care.
+            </p>
+            <span class="program-card-accent"></span>
+          </article>
+
+          <article class="program-card program-card-paper">
+            <div class="program-card-head">
+              <span class="program-number">03</span>
+              <span class="program-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M8 39c6-11 11-16 16-16s10 5 16 16M14 16a10 10 0 0 1 20 0c0 6-4.5 10-10 10s-10-4-10-10Z" />
+                  <path d="M24 5v8m-4-4h8" />
+                </svg>
+              </span>
+            </div>
+            <h3 data-i18n="program-three-title">A path forward</h3>
+            <p data-i18n="program-three-body">
+              Counseling, referrals, and mentorship help people explore next steps. Pregnant women can receive tailored support for wellbeing and healthy childbirth.
+            </p>
+            <span class="program-card-accent"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="leader-section section-shell">
+        <div class="leader-image-wrap">
+          <img
+            src="assets/gallery/winter-outreach.webp"
+            alt="A volunteer and an older neighbor share a moment while distributing warm clothing."
+            data-i18n-alt="leader-image-alt"
+            width="768"
+            height="1364"
+            loading="lazy"
+          >
+          <span class="leader-image-tag" data-i18n="leader-image-tag">Atlanta, in community</span>
+        </div>
+        <div class="leader-copy">
+          <p class="eyebrow" data-i18n="leader-eyebrow">A ministry of presence</p>
+          <h2 data-i18n="leader-title">Faith that meets people where they are.</h2>
+          <p data-i18n="leader-body">
+            Founded by Pastor Peter Oh, Make a Smile brings decades of ministry and mission experience into the streets of Atlanta. The heart of the work is simple: listen, serve, pray, and keep walking together.
+          </p>
+          <p class="leader-note" data-i18n="leader-note">
+            Local churches, businesses, mentors, and neighbors all have a part to play.
+          </p>
+          <a class="text-link" href="https://www.makesmileatlanta.org/pastor-oh" target="_blank" rel="noreferrer">
+            <span data-i18n="leader-link">More about the ministry</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M4 10h11m-4-4 4 4-4 4" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="film-section">
+        <div class="film-shell section-shell">
+          <div class="film-copy">
+            <p class="eyebrow" data-i18n="film-eyebrow">A glimpse of the gathering</p>
+            <h2 data-i18n="film-title">Come spend a moment with us.</h2>
+            <p data-i18n="film-description">
+              See a little of the faith, fellowship, and care that shape this ministry in downtown Atlanta.
+            </p>
+            <a class="film-link" href="https://www.youtube.com/watch?v=kHAXeYi1O4Y" target="_blank" rel="noreferrer">
+              <span data-i18n="film-fallback">Open video on YouTube</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-4-4 4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+          <div class="film-player" id="film-player">
+            <button
+              class="film-poster"
+              id="film-launch"
+              type="button"
+              aria-label="Play the Make a Smile ministry video"
+              data-i18n-aria="film-play"
+            >
+              <img src="https://i.ytimg.com/vi/kHAXeYi1O4Y/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+              <span class="film-poster-shade"></span>
+              <span class="film-play-button" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="m19 13 17 11-17 11z" />
+                </svg>
+              </span>
+              <span class="film-poster-label" data-i18n="film-poster-label">Watch the gathering</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section section-shell" id="gallery">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow" data-i18n="gallery-eyebrow">People make the picture</p>
+            <h2 data-i18n="gallery-title">A little more of life together.</h2>
+          </div>
+          <p class="section-heading-note" data-i18n="gallery-intro">
+            Small moments of welcome, friendship, and practical care from the community.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card gallery-card-tall">
+            <button class="gallery-open" type="button" data-gallery-index="0" aria-label="Open photo: a warm embrace" data-i18n-aria="openPhotoOne">
+              <img src="assets/gallery/neighbors-embrace.webp" alt="Two neighbors sharing a warm embrace outdoors." data-i18n-alt="photo-one-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-one-caption">A warm welcome</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button class="gallery-open" type="button" data-gallery-index="1" aria-label="Open photo: a neighbor conversation" data-i18n-aria="openPhotoTwo">
+              <img src="assets/gallery/neighbors-conversation.webp" alt="Two men share a friendly conversation outdoors." data-i18n-alt="photo-two-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-two-caption">Making time to listen</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-card-wide">
+            <button class="gallery-open" type="button" data-gallery-index="2" aria-label="Open photo: people listening together" data-i18n-aria="openPhotoThree">
+              <img src="assets/gallery/listening-together.webp" alt="A volunteer and a neighbor talking together." data-i18n-alt="photo-three-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-three-caption">Here for one another</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-card-wide">
+            <button class="gallery-open" type="button" data-gallery-index="3" aria-label="Open photo: sharing supplies" data-i18n-aria="openPhotoFour">
+              <img src="assets/gallery/sharing-supplies.webp" alt="A volunteer shares a bag of supplies with a neighbor outdoors." data-i18n-alt="photo-four-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-four-caption">Sharing what’s needed</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button class="gallery-open" type="button" data-gallery-index="4" aria-label="Open photo: an embrace in the park" data-i18n-aria="openPhotoFive">
+              <img src="assets/gallery/embrace-in-the-park.webp" alt="Two people share an embrace in a park." data-i18n-alt="photo-five-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-five-caption">A moment of connection</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button class="gallery-open" type="button" data-gallery-index="5" aria-label="Open photo: celebrating together" data-i18n-aria="openPhotoSix">
+              <img src="assets/gallery/celebrating-together.webp" alt="Two people share a joyful high five." data-i18n-alt="photo-six-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-six-caption">Celebrating together</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-card-tall">
+            <button class="gallery-open" type="button" data-gallery-index="6" aria-label="Open photo: a community care moment" data-i18n-aria="openPhotoSeven">
+              <img src="assets/gallery/community-care.webp" alt="A small group gathers around a moment of care." data-i18n-alt="photo-seven-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-seven-caption">Showing up, side by side</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button class="gallery-open" type="button" data-gallery-index="7" aria-label="Open photo: walking together" data-i18n-aria="openPhotoEight">
+              <img src="assets/gallery/walking-together.webp" alt="A volunteer and a neighbor sharing an embrace outdoors." data-i18n-alt="photo-eight-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-eight-caption">A bond built over time</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-card-wide">
+            <button class="gallery-open" type="button" data-gallery-index="8" aria-label="Open photo: winter outreach" data-i18n-aria="openPhotoNine">
+              <img src="assets/gallery/winter-outreach.webp" alt="A neighbor and volunteer share warm clothing during outreach." data-i18n-alt="photo-nine-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-nine-caption">Warmth, shared freely</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button class="gallery-open" type="button" data-gallery-index="9" aria-label="Open photo: a winter supply" data-i18n-aria="openPhotoTen">
+              <img src="assets/gallery/winter-supplies.webp" alt="A volunteer and a neighbor hold a packaged jacket." data-i18n-alt="photo-ten-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-ten-caption">A practical gift</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button class="gallery-open" type="button" data-gallery-index="10" aria-label="Open photo: sharing warmth" data-i18n-aria="openPhotoEleven">
+              <img src="assets/gallery/sharing-warmth.webp" alt="Two men stand together with a warm jacket." data-i18n-alt="photo-eleven-alt" width="768" height="1364" loading="lazy">
+              <span class="gallery-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm5 11 4.5 4.5M10.5 7v6m-3-3h6" /></svg>
+              </span>
+            </button>
+            <figcaption data-i18n="photo-eleven-caption">Neighbors, together</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="involved-section" id="involved">
+        <div class="involved-shell section-shell">
+          <div class="involved-copy">
+            <p class="eyebrow" data-i18n="involved-eyebrow">There’s room for you here</p>
+            <h2 data-i18n="involved-title">Bring what you can. Begin where you are.</h2>
+            <p data-i18n="involved-body">
+              Time, supplies, prayer, a skill, a partnership, or a gift—every offering can help make care more consistent.
+            </p>
+          </div>
+          <div class="involved-actions">
+            <a class="button button-dark" href="https://www.makesmileatlanta.org/volunteer" target="_blank" rel="noreferrer">
+              <span data-i18n="involved-volunteer">Volunteer with us</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-4-4 4 4-4 4" />
+              </svg>
+            </a>
+            <a class="button button-light" href="https://www.makesmileatlanta.org/donations" target="_blank" rel="noreferrer">
+              <span data-i18n="involved-give">Support the mission</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-4-4 4 4-4 4" />
+              </svg>
+            </a>
+            <p class="involved-small" data-i18n="involved-partner">
+              Churches and local businesses: let’s create more ways to serve together.
+            </p>
+          </div>
+          <span class="involved-sunburst" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <path d="M60 4v112M4 60h112M20.4 20.4l79.2 79.2m0-79.2-79.2 79.2" />
+              <circle cx="60" cy="60" r="20" />
+            </svg>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main section-shell">
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="22.5" />
+              <path d="M15.5 27.5c2.2 4.3 5.1 6.4 8.6 6.4s6.3-2.1 8.4-6.4" />
+              <circle class="brand-eye" cx="17.5" cy="18.2" r="1.5" />
+              <circle class="brand-eye" cx="30.5" cy="18.2" r="1.5" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Make a Smile</span>
+            <span class="brand-location">Atlanta, Georgia</span>
+          </span>
+        </a>
+        <p class="footer-description" data-i18n="footer-description">
+          A Christian outreach rooted in dignity, practical care, and faithful community.
+        </p>
+        <div class="footer-links">
+          <a href="https://www.makesmileatlanta.org/volunteer" target="_blank" rel="noreferrer" data-i18n="footer-contact">Contact & volunteer</a>
+          <a href="https://www.instagram.com/makeasmile_homeless_ministry/" target="_blank" rel="noreferrer" data-i18n="footer-instagram">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom section-shell">
+        <span data-i18n="footer-foundation">Make a Smile Foundation · Downtown Atlanta</span>
+        <a href="#top" class="back-to-top">
+          <span data-i18n="back-to-top">Back to top</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4m-5 5 5-5 5 5" /></svg>
+        </a>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="gallery-lightbox" aria-label="Photo viewer" data-i18n-aria="lightbox-label">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photo" data-i18n-aria="lightbox-close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+        <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo" data-i18n-aria="lightbox-prev">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7 7-7-7 7-7" /></svg>
+        </button>
+        <figure class="lightbox-figure">
+          <img id="lightbox-image" src="" alt="">
+          <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-arrow lightbox-next" id="lightbox-next" type="button" aria-label="Next photo" data-i18n-aria="lightbox-next">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7" /></svg>
+        </button>
+      </div>
+    </dialog>
+  </body>
+</html>
