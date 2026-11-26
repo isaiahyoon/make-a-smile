@@ -1,7 +1,7 @@
 const copy = {
   en: {
     pageTitle: "Make a Smile ATL — Hope grows when we show up",
-    pageDescription: "A Christian outreach in downtown Atlanta, showing up with practical care, prayer, counseling, and community.",
+    pageDescription: "A Christian outreach walking alongside Atlanta neighbors with practical care, prayer, counseling, and community.",
     skip: "Skip to content",
     announcement: "Downtown Atlanta outreach · Sundays + Mondays",
     announcementLink: "Come serve with us",
