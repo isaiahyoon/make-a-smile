@@ -17,3 +17,15 @@ The site is built with HTML, CSS, and vanilla JavaScript. Gallery images are opt
 The language control switches the page between English, Spanish, and Korean. Shareable language URLs use `?lang=es` for Spanish and `?lang=ko` for Korean; English is the default.
 
 Social sharing metadata uses Open Graph and Twitter Card tags with a 1200x630 preview image at `assets/social-preview.jpg`.
+
+## Run tests
+
+Install the JavaScript dependencies and Playwright's Chromium browser, then run the browser tests:
+
+```sh
+npm ci
+npx playwright install chromium
+npm test
+```
+
+GitHub Actions runs this test suite for pushes, pull requests, and manual workflow runs.
