@@ -1718,7 +1718,7 @@ h3 {
   }
 
   .leader-image-wrap {
-    width: min(82%, 420px);
+    width: min(70%, 240px);
     justify-self: center;
   }
 
@@ -1751,7 +1751,7 @@ h3 {
   }
 
   .gallery-grid {
-    grid-auto-rows: 155px;
+    grid-auto-rows: clamp(190px, 52vw, 330px);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 9px;
   }
@@ -1762,11 +1762,41 @@ h3 {
 
   .gallery-card-wide {
     grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gallery-card-winter {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .gallery-open {
     height: calc(100% - 26px);
     border-radius: 4px 18px 4px 18px;
+  }
+
+  .gallery-open[data-gallery-index="1"] img {
+    object-position: center 20%;
+  }
+
+  .gallery-open[data-gallery-index="2"] img,
+  .gallery-open[data-gallery-index="8"] img {
+    object-position: center 20%;
+  }
+
+  .gallery-open[data-gallery-index="3"] img,
+  .gallery-open[data-gallery-index="4"] img {
+    object-position: center top;
+  }
+
+  .gallery-open[data-gallery-index="5"] img {
+    object-position: center 8%;
+  }
+
+  .gallery-open[data-gallery-index="7"] img,
+  .gallery-open[data-gallery-index="9"] img,
+  .gallery-open[data-gallery-index="10"] img {
+    object-position: center 16%;
   }
 
   .gallery-card figcaption {

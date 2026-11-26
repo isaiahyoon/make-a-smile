@@ -92,3 +92,51 @@ test("the ministry photo retains its intended proportions on mobile and desktop"
     expect(box.width / box.height).toBeCloseTo(0.78, 2);
   }
 });
+
+test("the ministry photo stays compact and centered on mobile", async ({ page }) => {
+  await page.goto("/");
+
+  for (const width of [320, 390, 402, 430, 680]) {
+    await page.setViewportSize({ width, height: 900 });
+    const photo = await page.locator(".leader-image-wrap").boundingBox();
+    const galleryPhoto = await page.locator('[data-gallery-index="8"]').boundingBox();
+    expect(photo.width).toBeLessThanOrEqual(240);
+    expect(photo.x + photo.width / 2).toBeCloseTo(width / 2, 0);
+    expect(galleryPhoto.width).toBeLessThanOrEqual((width - 40) / 2);
+  }
+});
+
+test("mobile gallery crops keep the important moments in view", async ({ page }) => {
+  await page.goto("/");
+  await page.locator(".gallery-open img").evaluateAll((images) =>
+    Promise.all(images.map((image) => {
+      image.loading = "eager";
+      return image.decode();
+    })),
+  );
+
+  // Vertical source-image bounds containing faces and gestures, from top to bottom.
+  const subjects = [
+    [0.20, 0.53], [0.20, 0.44], [0.27, 0.59], [0.13, 0.48],
+    [0.08, 0.40], [0.10, 0.36], [0.25, 0.55], [0.18, 0.40],
+    [0.20, 0.52], [0.17, 0.49], [0.16, 0.60],
+  ];
+
+  for (const width of [320, 390, 402, 430, 680]) {
+    await page.setViewportSize({ width, height: 900 });
+    const crops = await page.locator(".gallery-open img").evaluateAll((images) =>
+      images.map((image) => {
+        const { width, height } = image.getBoundingClientRect();
+        const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight);
+        const visibleHeight = height / scale / image.naturalHeight;
+        const position = parseFloat(getComputedStyle(image).objectPosition.split(" ")[1]) / 100;
+        const top = (1 - visibleHeight) * position;
+        return { top, bottom: top + visibleHeight };
+      }),
+    );
+    for (const [index, [top, bottom]] of subjects.entries()) {
+      expect(crops[index].top, `photo ${index} at ${width}px`).toBeLessThanOrEqual(top);
+      expect(crops[index].bottom, `photo ${index} at ${width}px`).toBeGreaterThanOrEqual(bottom);
+    }
+  }
+});
